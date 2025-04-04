@@ -4,26 +4,44 @@
 
 {% block content %}
    <style>
-        .code-snippet {
-            font-size: 1.1rem;
-            animation: fadeInUp 1s ease-out;
-        }
+    .code-snippet {
+        font-size: 0.8rem;
+        background-color: #;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin: 20px 0;
+        animation: fadeInUp 1s ease-out;
+        overflow-x: auto;
+    }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+    .code-snippet .code {
+        color: #00ff88;
+        font-weight: bold;
+    }
+
+    h1, h2 {
+        color: #ffb86c;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
         }
-    </style>
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
 <div class="about-section">
     <div class="about-content">
         <h1>Python</h1>
-
 
         <!-- Python Snippet -->
         <div class="code-snippet">
